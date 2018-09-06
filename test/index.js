@@ -14,6 +14,19 @@ describe("Object", function () {
 })
 
 describe("Object", function () {
+	it('isClass should success', () => {
+		class Hi {}
+		assert(Object.isClass(Hi) === true, 'should success')
+	})
+})
+
+describe("Object", function () {
+	it('isObject should fail', () => {
+		assert(Object.isClass({}) === false, 'should fail')
+	})
+})
+
+describe("Object", function () {
 	it('assignDeep should success', () => {
 		let a = {method: 'findAll', options: {}}
 		let b = {method: 'findAll', options: {where: {id: 1}}}

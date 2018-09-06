@@ -9,7 +9,7 @@ describe("Object", function () {
 
 describe("Object", function () {
 	it('isObject should fail', () => {
-		assert(Object.isObject([]) === !false, 'should fail')
+		assert(Object.isObject([]) === false, 'should fail')
 	})
 })
 

@@ -36,3 +36,13 @@ describe("Object", function () {
 		assert(a.options.where.username === '33', 'should success')
 	})
 })
+
+
+describe("Boolean", function () {
+	it('isBoolean should success', () => {
+		assert(Boolean.isBoolean(true) === true, 'fail')
+		assert(Boolean.isBoolean(false) === true, 'fail')
+		assert(Boolean.isBoolean('') === false, 'fail')
+		assert(Boolean.isBoolean(null) === false, 'fail')
+	})
+})
